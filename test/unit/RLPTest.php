@@ -63,7 +63,7 @@ class RLPTest extends TestCase
         foreach ($rlptest as $test) {
             $encoded = $rlp->encode($test['in']);
 
-            $this->assertEquals($test['out'], $encoded->toString('hex'));
+            $this->assertEquals($test['out'], $encoded->toString('hex'), sprintf("The encoded data was: %s", $test['in']));
         }
     }
 
@@ -104,7 +104,7 @@ class RLPTest extends TestCase
     //     foreach ($invalidrlptest as $test) {
     //         $encoded = $rlp->encode($test['in']);
 
-    //         $this->assertEquals($test['out'], $encoded->toString('hex'));
+    //         $this->assertNotEquals($test['out'], $encoded->toString('hex'), sprintf("The encoded data was: %s", $test['in']));
     //     }
     // }
 }
