@@ -94,5 +94,11 @@ echo $decodedArray[1]->toString('utf8');
 echo $decodedArray[2]->toString('utf8');
 ```
 
+# Contribution
+
+Thank you for considering to help out with the source code!
+
+Pull requests and issues are always welcome.
+
 # License
 MIT
